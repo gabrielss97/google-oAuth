@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Login</title>
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
-    
-</body>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script
+      src="https://unpkg.com/jwt-decode/build/jwt-decode.js"
+      async
+    ></script>
+  </head>
+  <body>
+    <h1>Google card object</h1>
+    <div class="father-box">
+      <div id="buttonDiv"></div>
+
+      <div class="card">
+        <span>Nome Completo:</span>
+        <p id="fullName"></p>
+      </div>
+      <div class="card">
+        <span>Sub:</span>
+        <p id="sub"></p>
+      </div>
+      <div class="card">
+        <span>Primeiro nome:</span>
+        <p id="given_name"></p>
+      </div>
+      <div class="card">
+        <span>Ultimo nome:</span>
+        <p id="family_name"></p>
+      </div>
+      <div class="card">
+        <span>Email:</span>
+        <p id="email"></p>
+      </div>
+      <div class="card">
+        <span>Verificado?</span>
+        <p id="verifiedEmail"></p>
+      </div>
+
+      <img src="" id="picture" />
+    </div>
+  </body>
 </html>
